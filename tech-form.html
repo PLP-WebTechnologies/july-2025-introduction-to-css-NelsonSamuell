@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="description" content="Enhanced week 2 assignment">
+            <meta name="keywords" content="forms, HTML, assignment">
+            <meta name="author" content="Nelnel">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">"
+            <title>WEEK 2 ASSIGNMENT</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <header>
+                <h1>THE WINNING TECH EVENT</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="enhanced-form.html">Enhanced Form</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section>
+            <h2>Event Details and Media</h2>
+            <p>Our annual tech conference is a must-attend event! Check out this video from last year.</p>
+            <video width="600" height="400" controls>
+                <source src="https://videos.pexels.com/video-files/27970315/12276514_1920_1080_60fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Sample Image</h2>
+            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" 
+            alt="What we offer" width="500" height="300">
+            <h2>Key Features of the Conference:</h2>
+            <ol>
+                <li>Expert-led workshops</li>
+                <li>Networking opportunities</li>
+                <li>Keynote speakers from top tech companies</li>
+            </ol>
+            <h2>Pricing Maps</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Price</th>
+                        <th>Includes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard Pass</td>
+                        <td>Ksh 2000</td>
+                        <td>Access to all sessions</td>
+                    </tr>
+                    <tr>
+                        <td>VIP Pass</td>
+                        <td>Ksh 8000</td>
+                        <td>All standard features + exclusive networking lounge</td>
+                    </tr>
+                    <tr>
+                        <td>Student Pass</td>
+                        <td>Ksh 1000</td>
+                        <td>Access to all sessions (Valid student ID required)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="my-form">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                
+                    <label for="full-name">Name*:</label>
+                    <input type="text" id="full-name" name="full-name"  autocomplete="name" required>
+                
+                <br><br>
+                
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email"  autocomplete="email" required>
+                
+                <br><br>
+                
+                    <label for="password">Password*:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                
+                <br><br>
+                
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="16" max="99" placeholder="Optional">
+                
+                <br><br>
+                
+                    <label for="event-date">Preferred Event Date:</label>
+                    <input type="date" id="event-date" name="event-date">
+                
+                <br><br>
+                
+                    <label for="ticket-type">Ticket Type:</label>
+                    <select id="ticket-type" name="ticket-type">
+                        <option value="standard">Standard Pass</option>
+                        <option value="vip">VIP Pass</option>
+                        <option value="student">Student Pass</option>
+                    </select>
+                
+                <br><br>
+                
+                    <label for="message">Any Special Requests:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="e.g., dietary restrictions, accessibility needs..."></textarea>
+                
+                <br><br>
+                
+                    <label for="confirmation">Confirmation Code (Read-only):</label>
+                    <input type="text" id="confirmation" name="confirmation" value="CONF-2024" readonly>
+                
+                <br><br>
+                
+                    <label for="photo">Upload Profile Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                
+                <br><br>
+                
+                    <input type="submit" value="Register Now">
+                
+            </form>
+        </section>
+            </main>
+        </body>
+
+ 
